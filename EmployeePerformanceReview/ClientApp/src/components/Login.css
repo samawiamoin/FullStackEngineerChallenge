@@ -1,0 +1,25 @@
+﻿@media all and (min-width: 480px) {
+    .Login {
+        padding: 60px 0;
+    }
+
+        .Login form {
+            margin: 0 auto;
+            max-width: 320px;
+        }
+}
+
+.empbutton {
+    float: right;
+    margin-top: -35px;
+}
+
+.addemp{
+    margin-top: 25px;
+}
+
+.empassignbutton {
+    float: right;
+    margin-top: -35px;
+    margin-right: 150px;
+}
