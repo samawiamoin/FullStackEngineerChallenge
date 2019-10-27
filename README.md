@@ -48,7 +48,7 @@ Under the **/employee** path:
   - /GetEmployee/{employeeId}
     get employee by id
   - /DeleteEmployee/{employeeId}
-    remove the employee and all its assignments
+    remove the employee and all its performance reviews
     
 Under the **/performancereview** path:
 
