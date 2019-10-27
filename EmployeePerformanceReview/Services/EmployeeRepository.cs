@@ -52,6 +52,8 @@ namespace EmployeePerformanceReview.Services
                 {
                     //Delete that employee
                     db.Employees.Remove(employee);
+                    var PerformanceReviewsToDelete = db.PerformanceReviews.Where(x => x.EmployeeId == employeeId);
+                    db.PerformanceReviews.RemoveRange(PerformanceReviewsToDelete);
 
                     //Commit the transaction
                     result = await db.SaveChangesAsync();

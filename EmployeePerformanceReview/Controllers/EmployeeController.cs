@@ -43,7 +43,7 @@ namespace EmployeePerformanceReview.Controllers
         }
 
         [HttpGet]
-        [Route("GetEmployee")]
+        [Route("GetEmployee/{employeeId}")]
         public async Task<IActionResult> GetEmployee(int? employeeId)
         {
             if (employeeId == null)
@@ -98,7 +98,7 @@ namespace EmployeePerformanceReview.Controllers
         }
 
         [HttpDelete]
-        [Route("DeleteEmployee")]
+        [Route("DeleteEmployee/{employeeId}")]
         public async Task<IActionResult> DeleteEmployee(int? employeeId)
         {
             int result = 0;

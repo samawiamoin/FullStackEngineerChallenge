@@ -42,7 +42,7 @@ namespace EmployeePerformanceReview.Controllers
         }
 
         [HttpGet]
-        [Route("GetPerformanceReview")]
+        [Route("GetPerformanceReview/{prId}")]
         public async Task<IActionResult> GetPerformanceReview(int? prId)
         {
             if (prId == null)

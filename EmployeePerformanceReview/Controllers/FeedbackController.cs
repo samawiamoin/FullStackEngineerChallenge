@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeePerformanceReview.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/feedback")]
     [ApiController]
     public class FeedbackController : ControllerBase
     {
